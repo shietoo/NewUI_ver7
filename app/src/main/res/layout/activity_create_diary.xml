@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<ImageView
+    android:id="@+id/diaryimage_iv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"/>
+    <Button
+        android:id="@+id/camera_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diaryimage_iv"
+        android:text="CAMERA"
+        android:onClick="camera1"/>
+    <TextView
+        android:id="@+id/createtitle_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/camera_btn"
+        android:text="Title :"
+
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:paddingLeft="5dp"
+        android:background="@color/transparent_background"
+        />
+    <EditText
+        android:layout_below="@id/createtitle_tv"
+        android:id="@+id/diaryTitle_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/note_tv"
+        android:layout_below="@id/diaryTitle_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note :"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:paddingLeft="5dp"
+        android:background="@color/transparent_background"
+        />
+    <EditText
+        android:id="@+id/diaryDesc_et"
+        android:layout_below="@id/note_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SAVE"
+        android:onClick="save"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fields"
+ >
+
+
+    <FrameLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_plant_bgi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/Plantmain_info_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:background="@color/transparent_background">
+        <ImageView
+            android:id="@+id/img_diary"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/img_garden"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+      
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+   //bar
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="35dp"
+        android:paddingLeft="30dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="日期"
+        android:textSize="25dp"
+        />
+
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/iv_hum"
+        android:layout_width="50dp"
+        android:layout_height="60dp" />
+    <ImageView
+    android:id="@+id/iv_tmp"
+    android:layout_below="@id/tv_date"
+    android:layout_alignParentLeft="true"
+    android:layout_width="40dp"
+    android:layout_height="30dp" />
+    <ImageView
+        android:id="@+id/iv_hum_air"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/iv_tmp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+    <TextView
+        android:id="@+id/tv_hum"
+        android:layout_toRightOf="@id/iv_hum"
+        android:layout_alignBottom="@id/iv_hum"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_tmp"
+        android:layout_alignBottom="@id/iv_tmp"
+        android:layout_toRightOf="@id/iv_tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tv_hum_air"
+        android:layout_toRightOf="@id/iv_hum_air"
+       android:layout_alignBottom="@id/iv_hum_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+
+
+    <!--表情-->
+    <ImageView
+        android:id="@+id/iv_happy"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_thirsty"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_day"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_night"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img_camera"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <ImageView
+        android:id="@+id/iv_wateringpot"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+        <ImageView
+
+            android:src="@drawable/grass"
+            android:layout_width="match_parent"
+            android:layout_height="250sp" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/grass"
+            android:layout_width="match_parent"
+            android:layout_height="200sp" />
+    </FrameLayout>
+    <TextView
+        android:text="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_CreateName"
+        android:layout_width="match_parent"
+        android:padding="20sp"
+        android:layout_height="60sp"
+        android:text=""
+        />
+
+    <TextView
+        android:text="Birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_CreateBirthday"
+
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:padding="20sp"
+        android:text=""
+        />
+
+
+    <TextView
+        android:text="Note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_CreateNote"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:padding="20sp"
+        android:text=""
+        />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="100sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CreatPlant2_edit"
+            android:text="Edit"
+            android:layout_weight="1"
+            android:layout_marginLeft="58sp"
+            android:layout_marginRight="18sp"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CreatPlant2_save"
+            android:text="Save"
+            android:layout_weight="1"
+            android:layout_marginLeft="18sp"
+            android:layout_marginRight="58sp"
+            android:onClick="createSave"
+            />
+    </LinearLayout>
+</LinearLayout>

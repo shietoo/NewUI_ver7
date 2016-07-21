@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+    <Button
+        android:id="@+id/PlantFile2_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:text="CAMERA"
+        android:onClick="camera1"/>
+
+    <TextView
+        android:id="@+id/CreatPlant2name_tv"
+        android:text="Name :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/PlantFile2_camera"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:paddingLeft="5dp"
+        android:background="@color/transparent_background"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlantFile2_name"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/CreatPlant2name_tv"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/CreatPlant2Brith_tv"
+        android:text="Birthday :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/PlantFile2_name"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:paddingLeft="5dp"
+        android:background="@color/transparent_background"
+
+        />
+
+    <TextView
+        android:id="@+id/PlantFile2_birthday"
+        android:background="@drawable/setdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/CreatPlant2Brith_tv"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/CreatPlant2Note_tv"
+        android:text="Note :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/PlantFile2_birthday"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:paddingLeft="5dp"
+        android:background="@color/transparent_background"
+
+
+        />
+
+    <EditText
+        android:id="@+id/PlantFile2_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/CreatPlant2Note_tv"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PlantFile2_back"
+                android:text="Back"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PlantFile1_save"
+                android:text="Save"
+                android:layout_weight="1"
+                android:onClick="profilesave"
+                android:textSize="30dp"
+                />
+        </LinearLayout>
+</RelativeLayout>
+
+

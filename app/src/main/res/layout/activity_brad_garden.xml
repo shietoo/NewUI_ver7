@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fields"
+   >
+    <TextView
+        android:id="@+id/tv"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+    <LinearLayout
+        android:layout_below="@id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="insert and query"
+            android:onClick="test1"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update and query"
+            android:onClick="test2"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+<!--
+    <ImageView
+        android:id="@+id/garden1_iv"
+        android:background="@drawable/wood"
+        android:paddingBottom="60dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="65dp"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        />
+        !-->
+    <TextView
+        android:id="@+id/tv_plantname1"
+        android:background="@drawable/wood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="280dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:paddingLeft="53dp"
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:maxLength="4"
+        android:textStyle="bold|italic"
+        />
+<!--
+    <ImageView
+        android:id="@+id/garden2_iv"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="200dp"
+        android:layout_height="150dp"/>
+        !-->
+    <TextView
+        android:background="@drawable/wood"
+        android:id="@+id/tv_plantname2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="300dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:paddingLeft="53dp"
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:maxLength="4"
+        android:textStyle="bold|italic"
+        />
+
+<!--
+    <ImageView
+        android:id="@+id/garden3_iv"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@id/garden1_iv"
+        android:layout_marginBottom="100dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"/>
+        !-->
+    <TextView
+        android:background="@drawable/wood"
+        android:id="@+id/tv_plantname3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:paddingLeft="53dp"
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:maxLength="4"
+        android:textStyle="bold|italic"/>
+    <!--
+    <ImageView
+        android:id="@+id/garden4_iv"
+        android:layout_alignLeft="@id/garden2_iv"
+        android:layout_below="@id/tv_plantname2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"/>
+        !-->
+    <TextView
+        android:background="@drawable/wood"
+        android:id="@+id/tv_plantname4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="-30dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:paddingLeft="53dp"
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:maxLength="4"
+        android:textStyle="bold|italic"
+        />
+
+</RelativeLayout>

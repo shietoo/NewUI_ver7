@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+            <ImageView
+                android:id="@+id/PlantFile1_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        <TextView
+            android:id="@+id/profile1Name_tv"
+            android:text="Name :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/PlantFile1_img"
+
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:paddingLeft="5dp"
+            android:background="@color/transparent_background"
+            />
+
+        <TextView
+            android:id="@+id/PlantFile1_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/profile1Name_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/profileBorth1_tv"
+            android:text="Birthday :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/PlantFile1_name"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:paddingLeft="5dp"
+            android:background="@color/transparent_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/profileBorth1_tv"
+            android:id="@+id/PlantFile1_birthday"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/profileNote1_tv"
+            android:text="Note :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/PlantFile1_birthday"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:paddingLeft="5dp"
+            android:background="@color/transparent_background"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/profileNote1_tv"
+            android:id="@+id/PlantFile1_note"
+
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="25dp"
+            />
+
+    <Button
+        android:id="@+id/PlantFile1_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        android:layout_alignParentBottom="true"
+        android:textSize="30dp"/>
+    </RelativeLayout>
+
